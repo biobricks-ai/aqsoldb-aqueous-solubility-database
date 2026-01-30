@@ -1,0 +1,30 @@
+schema: '2.0'
+stages:
+  download:
+    cmd: python stages/01_download.py
+    deps:
+    - path: stages/01_download.py
+      hash: md5
+      md5: f3808e0cc81e5dfcb3f9d74147a1d206
+      size: 1555
+    outs:
+    - path: download/dataset.csv
+      hash: md5
+      md5: 82f9a402284626588e01a9f0ff5f674d
+      size: 3844092
+  build:
+    cmd: python stages/02_build.py
+    deps:
+    - path: download/dataset.csv
+      hash: md5
+      md5: 82f9a402284626588e01a9f0ff5f674d
+      size: 3844092
+    - path: stages/02_build.py
+      hash: md5
+      md5: 88b1668c41f89a3eadbbcbf1bacc2e63
+      size: 1843
+    outs:
+    - path: brick/aqsoldb.parquet
+      hash: md5
+      md5: 88635d93b2db84b88d99f0c722ad9902
+      size: 1600362

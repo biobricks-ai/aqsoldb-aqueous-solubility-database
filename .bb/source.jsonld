@@ -1,0 +1,10 @@
+{
+  "@context": {"@vocab": "https://schema.org/", "dcterms": "http://purl.org/dc/terms/"},
+  "@type": "DataDownload",
+  "name": "AqSolDB: Curated Aqueous Solubility Database",
+  "url": "https://nature.com/articles/s41597-019-0151-1",
+  "dateAccessed": "2026-01-29",
+  "dcterms:source": "https://doi.org/10.7910/DVN/OVHAW8",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "Sorkun, M.C., Khetan, A. & Er, S. AqSolDB, a curated reference set of aqueous solubility and 2D descriptors for a diverse set of compounds. Sci Data 6, 143 (2019). https://doi.org/10.1038/s41597-019-0151-1"
+}

@@ -1,0 +1,60 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "cheminf": "http://semanticscience.org/resource/",
+    "obo": "http://purl.obolibrary.org/obo/"
+  },
+  "columns": [
+    {
+      "name": "smiles",
+      "@type": "cheminf:CHEMINF_000018",
+      "description": "Canonical SMILES string",
+      "dataType": "string"
+    },
+    {
+      "name": "inchi",
+      "@type": "cheminf:CHEMINF_000113",
+      "description": "InChI string",
+      "dataType": "string"
+    },
+    {
+      "name": "inchikey",
+      "@type": "cheminf:CHEMINF_000059",
+      "description": "InChI Key",
+      "dataType": "string"
+    },
+    {
+      "name": "solubility_log_s",
+      "@type": "obo:BAO_0002130",
+      "description": "Aqueous Solubility (LogS, mol/L)",
+      "unitCode": "Log(mol/L)",
+      "measurementTechnique": "Experimental/Curated"
+    },
+    {
+      "name": "sd",
+      "description": "Standard Deviation of solubility values",
+      "dataType": "float"
+    },
+    {
+      "name": "ocurrences",
+      "description": "Number of occurrences in source datasets",
+      "dataType": "integer"
+    },
+    {
+      "name": "group",
+      "description": "Dataset split group (Train/Test/Val)",
+      "dataType": "string"
+    },
+    {
+      "name": "molwt",
+      "description": "Molecular Weight",
+      "unitCode": "g/mol",
+      "dataType": "float"
+    },
+    {
+      "name": "mollogp",
+      "description": "MolLogP (partition coefficient)",
+      "dataType": "float"
+    }
+  ]
+}

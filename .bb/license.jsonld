@@ -1,0 +1,6 @@
+{
+  "@context": {"@vocab": "https://schema.org/"},
+  "@type": "CreativeWork",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "usageInfo": "Data is available under the Creative Commons Attribution 4.0 International License."
+}

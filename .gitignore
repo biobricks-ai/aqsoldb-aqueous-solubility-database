@@ -1,0 +1,6 @@
+/brick
+/download
+/.venv
+__pycache__
+.DS_Store
+*.pyc

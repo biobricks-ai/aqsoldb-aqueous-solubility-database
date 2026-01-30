@@ -1,0 +1,25 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "cheminf": "http://semanticscience.org/resource/",
+    "obo": "http://purl.obolibrary.org/obo/"
+  },
+  "@type": "dcat:Dataset",
+  "name": "aqsoldb-aqueous-solubility-database",
+  "description": "AqSolDB is a curated reference set of aqueous solubility values for 9,982 compounds, providing a standardized resource for solubility modeling. It serves as a benchmark for predicting aqueous solubility (LogS).",
+  "keywords": ["solubility", "chemistry", "pharmacology", "LogS", "ADMET", "benchmark"],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "dateCreated": "2026-01-29",
+  "version": "1.0.0",
+  "creator": {"@type": "Organization", "name": "BioBricks.ai"},
+  "distribution": [{
+    "@type": "dcat:Distribution",
+    "name": "aqsoldb.parquet",
+    "contentUrl": "brick/aqsoldb.parquet",
+    "encodingFormat": "application/x-parquet"
+  }],
+  "measurementTechnique": "Experimental and Computational Aggregation",
+  "variableMeasured": ["Aqueous Solubility"]
+}
